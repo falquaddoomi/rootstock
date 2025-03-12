@@ -68,7 +68,7 @@ jobs:
         with:
           commit-message: 'revise using AI model\n\nUsing the OpenAI model ${{ inputs.model }}'
           title: 'AI-based revision using ${{ inputs.model }}'
-          author: OpenAI model ${{ inputs.model }} <support@openai.com>
+          author: OpenAI model ${{ inputs.model }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
           add-paths: |
             content/*.md
           branch: ${{ inputs.branch_name }}
