@@ -12,6 +12,11 @@ on:
         required: false
         type: string
         default: ''
+      model_provider:
+        description: 'Model Provider (one of "openai", "anthropic")'
+        required: true
+        type: string
+        default: 'openai'
       model:
         description: 'Language model'
         required: true
